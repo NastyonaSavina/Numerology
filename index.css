@@ -1,0 +1,180 @@
+/* resets */
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* main styles */
+
+:root {
+
+    --primary-font-family: 'Nunito', sans-serif;
+    --text-color: #338309;
+    --bcgr-color: #c9d46c;
+    --main-color: #b4d1f1;
+    --second-color: #FAAB01;
+    --btn-hover-color: #E48716;
+
+}
+
+body {
+    font-family: var(--primary-font-family);
+    color: var(--text-color);
+}
+
+input {
+    display: flex;
+    padding: 8px;
+
+    font-family: inherit;
+
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    text-align: center;
+    min-width: 60px;
+    
+
+    color: var(--text-color);
+    background-color: var(--second-color);
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+
+.header {
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.container {
+    min-width: 280px;
+    margin: 20px auto;
+
+    background-color: var(--main-color);
+    border-radius: 10px;
+
+}
+
+.addition-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    row-gap: 15px;
+    column-gap: 20px;
+    padding: 15px;
+
+    margin-bottom: 20px;
+}
+
+.input-label {
+    width: 150px;
+}
+
+.input-place {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.clc-btn{
+   
+    padding: 9px 15px 10px 15px;
+
+
+    font-family: var(--primary-font-family);
+    font-size: 18px;
+}
+.numbers-area {
+    display: flex;
+    gap:30px;
+
+    padding: 15px;
+}
+
+.future-numbers{
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+
+
+.num-group{
+    width: 70px;
+}
+.num-pair{
+    display: flex;
+    gap: 15px;
+}
+
+.num-results{
+    display: flex;
+}
+.num-value{
+    background-color: var(--bcgr-color);
+    padding: 5px;
+    border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+
+    }
+
+    .addition-area {
+        column-gap: 90px;
+    }
+  
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 768px;
+        padding: 0px 60px;
+    }
+
+
+}
