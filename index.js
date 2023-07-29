@@ -46,7 +46,7 @@ clcBtn.addEventListener("click", (event) => {
 
     const nFive =
       nOne +
-      (date.split("")[lastNumberPosition] === 0
+      (date.split("")[lastNumberPosition] === "0"
         ? date.split("")[lastNumberPosition - 1] * 2
         : date.split("")[lastNumberPosition] * 2);
     calculation.nFive = nFive;
